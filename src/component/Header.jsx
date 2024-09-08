@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-
+import logo from "../assets/logo.svg";
 function Header() {
   return (
     <header className="shadow sticky z-50 top-0">
@@ -9,7 +9,7 @@ function Header() {
             <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                <Link to="/" className='flex items-center'>
                <img
-                            src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
+                            src={logo}
                             className="mr-3 h-12"
                             alt="Logo"
                         />
@@ -43,6 +43,24 @@ function Header() {
                     </li>
                     <li>
                         <NavLink
+                        to="/game"
+                        className={({isActive}) => `block py-2 pr-4 pl-3 duration-200 ${isActive?"text-orange":"text-gray-700"} border-b border-gray hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                        }
+                        >
+                        Game
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
+                        to="/discussion"
+                        className={({isActive}) => `block py-2 pr-4 pl-3 duration-200 ${isActive?"text-orange":"text-gray-700"} border-b border-gray hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                        }
+                        >
+                        Discussion
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink
                         to="/about"
                         className={({isActive}) => `block py-2 pr-4 pl-3 duration-200 ${isActive?"text-orange":"text-gray-700"} border-b border-gray hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                         }
@@ -58,16 +76,7 @@ function Header() {
                             Conact us
                         </NavLink>
                     </li>
-                    <li>
-                                <NavLink
-                                to="/leetcode"
-                                    className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                                    }
-                                >
-                                    Leetcode
-                                </NavLink>
-                    </li>
+                    
                 </ul>
             </div>  
             </div>

@@ -6,8 +6,7 @@ import Layout from './Layout';
 import Home from './component/Home';
 import Contact from './component/Contact';
 import About from './component/About';
-import Leetcode, { LeetcodeInfo } from './component/Leetcode';
-import User from './component/User';
+import Game from './component/Game'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,12 +14,7 @@ const router = createBrowserRouter(
       <Route path="" element={<Home />} />  
       <Route path="about" element={<About />} />
       <Route path="contact-us" element={<Contact />} />
-      <Route path='user/:userid' element={<User/>} />
-      <Route 
-      loader={LeetcodeInfo}
-      path='leetcode' 
-      element={<Leetcode/>}
-       />
+      <Route path="game" element={<Game/>}/>
     </Route>
 
   )
