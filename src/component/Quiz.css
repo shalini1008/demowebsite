@@ -19,18 +19,25 @@
     max-width: 80%;
     text-align: center;
   }
-  
-  h2, h3 {
+  .quiz-box h3{
     color: #f9f9f9;
   }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
+  .quiz-box h2{
+    color: wheat;
+  }
+  .quiz-box ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;              
+  flex-direction: column;     
+  justify-content: space-between;
+  align-items: center; 
   }
   
-  li {
+  .quiz-box li {
     margin: 10px 0;
+    color: wheat;
+    text-align: center;
   }
   
   /* Input fields */
