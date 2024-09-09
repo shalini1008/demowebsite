@@ -1,0 +1,43 @@
+.level-map-container {
+    position: relative;
+    height: 600px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #f0f8ff; /* Light background */
+  }
+  
+  .path {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .level {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #87ceeb; /* Sky blue */
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .level.active {
+    background-color: #ff69b4; /* Highlight active levels */
+  }
+  
+  .level.locked {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
+  .level span {
+    font-size: 14px;
+    color: #fff;
+  }
+ 
+  
