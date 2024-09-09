@@ -52,11 +52,11 @@ function Header() {
                     </li>
                     <li>
                         <NavLink
-                        to="/discussion"
+                        to="/contest"
                         className={({isActive}) => `block py-2 pr-4 pl-3 duration-200 ${isActive?"text-orange":"text-gray-700"} border-b border-gray hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                         }
                         >
-                        Discussion
+                        Contest
                         </NavLink>
                     </li>
                     <li>

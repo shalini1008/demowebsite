@@ -1,0 +1,86 @@
+/* Basic Page Setup */
+
+  
+  .quiz-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* Dark background */
+  }
+  
+  /* Quiz Box */
+  .quiz-box {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    width: 500px;
+    max-width: 80%;
+    text-align: center;
+  }
+  
+  h2, h3 {
+    color: #f9f9f9;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+  }
+  
+  /* Input fields */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Final score display */
+  .quiz-complete {
+    text-align: center;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  .quiz-complete h3 {
+    color: #00bcd4;
+  }
+  
+  

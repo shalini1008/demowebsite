@@ -1,53 +1,34 @@
-import React, { useState } from "react";
-import "../level.css"
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+import './Game.css';
+import LevelPage from './LevelPage';
+import Quiz from './Quiz';
 
 const levels = [
-  { id: 1, name: "Level 1", status: "unlocked" },
-  { id: 2, name: "Level 2", status: "locked" },
-  { id: 3, name: "Level 3", status: "locked" },
-  { id: 4, name: "Level 4", status: "locked" },
-  { id: 5, name: "Level 5", status: "locked" },
+  { id: 1, x: 10, y: 20, completed: true },
+  { id: 2, x: 30, y: 50, completed: true },
+  { id: 3, x: 50, y: 70, completed: false },
+  { id: 4, x: 70, y: 50, completed: false },
+  { id: 5, x: 90, y: 20, completed: false }
 ];
 
-const Game = () => {
-  const [currentLevel, setCurrentLevel] = useState(1);
+function Game() {
+  const navigate = useNavigate(); // Hook from react-router-dom
 
   const handleLevelClick = (levelId) => {
-    if (levelId <= currentLevel) {
-      alert(`Starting ${levels[levelId - 1].name}`);
-    }
+    // Redirect to the Quiz page with the selected levelId
+    navigate(`/quiz/${levelId}`);
   };
 
   return (
-    <div className="level-map-container">
-         <svg
-        height="600px"
-        width="300px"
-        xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
-      >
-        <path
-          d="M 50,100 C 50,150 150,200 150,250 S 250,300 250,350"
-          stroke="lightpink"
-          strokeWidth="4"
-          fill="none"
-        />
-      </svg>
-      <div className="path">
-        {levels.map((level) => (
-          <div
-            key={level.id}
-            className={`level ${level.status} ${
-              level.id <= currentLevel ? "active" : ""
-            }`}
-            onClick={() => handleLevelClick(level.id)}
-          >
-            <span className="animate-bounce hidden sm:block text-4xl">{level.name}</span>
-          </div>
-        ))}
-      </div>
+    <div className="App">
+      <h1 className="animate-bounce hidden sm:block text-4xl">Let's Start the Game</h1>
+      <main>
+        <LevelPage levels={levels} onLevelClick={handleLevelClick} />
+      </main>
     </div>
   );
-};
+}
 
 export default Game;
+

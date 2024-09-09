@@ -7,6 +7,7 @@ import Home from './component/Home';
 import Contact from './component/Contact';
 import About from './component/About';
 import Game from './component/Game'
+import Quiz from './component/Quiz';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />} />
       <Route path="contact-us" element={<Contact />} />
       <Route path="game" element={<Game/>}/>
+      <Route path="quiz/:levelId" element={<Quiz />} />
     </Route>
 
   )

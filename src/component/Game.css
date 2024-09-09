@@ -1,0 +1,35 @@
+.App {
+    text-align: center;
+    background-color: #dee5ef; /* Darkish blue background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .App-header {
+    background-color: #1a2a40; /* Match the app background */
+    padding: 20px;
+    color: white;
+  }
+  
+  .App-header h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .App-footer {
+    background-color: #1a2a40; /* Match the app background */
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .App-footer p {
+    margin: 0;
+  }
