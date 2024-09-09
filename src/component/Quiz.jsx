@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './quiz.css';  // Import the CSS file for styling
+import './Quiz.css';  // Import the CSS file for styling
 import { useParams } from 'react-router-dom';
 const Quiz = () => {
   const { levelId } = useParams();
