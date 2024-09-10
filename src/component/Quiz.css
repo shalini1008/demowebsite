@@ -6,12 +6,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: black; /* Dark background */
+    background-color: rgb(205, 185, 165); /* Dark background */
   }
   
   /* Quiz Box */
   .quiz-box {
-    background-color: #222;
+    background-color: #eaab89;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
@@ -20,10 +20,10 @@
     text-align: center;
   }
   .quiz-box h3{
-    color: #f9f9f9;
+    color: brown;
   }
   .quiz-box h2{
-    color: wheat;
+    color: black;
   }
   .quiz-box ul {
   list-style-type: none;
@@ -36,7 +36,7 @@
   
   .quiz-box li {
     margin: 10px 0;
-    color: wheat;
+    color: black;
     text-align: center;
   }
   

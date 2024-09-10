@@ -62,7 +62,7 @@ const Quiz = () => {
 
   return (
     <>
-    <h2 className="text-center text-2xl sm:text-5xl py-10 font-medium bg-black text-white">Quiz for Level {levelId}</h2>
+    <h2 className="text-center text-2xl sm:text-5xl py-10 font-medium bg-orange-700 text-white">Quiz for Level {levelId}</h2>
     <div className="quiz-container">
       {showScore ? (
         <div className="quiz-complete">
