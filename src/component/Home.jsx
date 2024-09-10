@@ -24,12 +24,14 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="mx-auto w-full max-w-7xl">
+        <div className="mx-auto w-full max-w-7xl bg-white">
             <div className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
                 <div className="relative z-10 max-w-screen-xl px-4 pb-20 pt-5 sm:pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
                     {/* First Section */}
+                    <div> <h1 className="max-w-2xl text-3xl font-bold sm:text-4xl text-orange-700"> <strong>The Citizen's Journey to Constitutional Excellence</strong></h1> </div>
                     <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between space-y-8 sm:space-y-0">
-                        <p className="flex-1 text-left sm:mr-4">
+                        
+                        <p className="flex-1 text-left sm:mr-4 text-black" >
                             <strong>Nagrik Aur Samvidhan</strong> is an interactive web platform designed to
                             simplify and promote constitutional literacy among citizens. The
                             platform offers a gamified learning experience, where users
@@ -45,7 +47,7 @@ export default function Home() {
                         </p>
                         <div className="flex-none">
                             <img
-                                className={`w-106 h-auto transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0 ${isScrolled ? "animate-colorChange" : ""}`}
+                                className={`w-95 h-auto transition-all duration-300 rounded-sm cursor-pointer filter grayscale hover:grayscale-0 ${isScrolled ? "animate-colorChange" : ""}`}
                                 src={constimg}
                                 alt="image1"
                             />
@@ -78,7 +80,7 @@ export default function Home() {
                         </Link>
                     </div>
 
-                    <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+                    <div className="container py-2 m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                         <div className="space-y-1 md:space-y-0 md:flex md:gap-6 lg:items-start lg:gap-4 ">
                             <img
                                 className={`md:7/12 lg:w-6/12 mx-1 transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0  ${isScrolled ? "animate-colorChange" : ""}`}
@@ -96,8 +98,8 @@ export default function Home() {
                 </div>
             </div>
 
-            <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">
-                Nagrik Aur Samvidhan
+            <h1 className="text-center text-2xl sm:text-5xl font-medium py-4 text-orange-700">
+               ~ Nagrik Aur Samvidhan ~
             </h1>
         </div>
     );

@@ -1,3 +1,6 @@
+body {
+    background-color: white;
+}
 .quote-container {
     background-color: #f5f5f5; /* Soft background color */
     border-left: 6px solid #3e8cbf; /* Blue accent border */
