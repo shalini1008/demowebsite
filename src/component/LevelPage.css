@@ -35,7 +35,7 @@
   }
   
   .level-circle.completed {
-    background-color: #2196F3; /* Shade of blue for completed levels */
+    background-color: #f36721; /* Shade of blue for completed levels */
   }
   
   .level-circle:hover {

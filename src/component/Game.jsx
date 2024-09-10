@@ -22,7 +22,7 @@ function Game() {
 
   return (
     <div className="App">
-      <h1 className="animate-bounce hidden sm:block text-4xl">Let's Start the Game</h1>
+      <h1 className="animate-custom-bounce hidden sm:block text-4xl text-orange-700"> <strong> Let's Start the Game </strong></h1>
       <main>
         <LevelPage levels={levels} onLevelClick={handleLevelClick} />
       </main>

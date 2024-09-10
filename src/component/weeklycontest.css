@@ -32,16 +32,21 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
 }
 
 /* Enabled button (Go to Contest Questions) */
 button:not([disabled]) {
-  background-color: #4caf50;
+  background-color: rgb(194 65 12);
   color: white;
 }
 
-button:not([disabled]):hover {
+.sub{
   background-color: #45a049;
+}
+
+button:not([disabled]):hover {
+  background-color: rgb(194 65 12);
 }
 
 /* Disabled button (Contest Ended/Submitted) */

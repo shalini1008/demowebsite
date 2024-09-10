@@ -5,16 +5,16 @@ const ContestPage = () => {
   return (
     <>
       <section>
-        <h1>Contests</h1>
+        <h1> <strong>Contests</strong></h1>
         <div>
-          <h2>Weekly Contest</h2>
+          
           <WeeklyContest startNowForTesting={true} />
           <Link to="/contest/weekly">
             <button>Go to Weekly Contest</button>
           </Link>
         </div>
         <div>
-          <h2>Create Your Own Contest</h2>
+          <h2> <strong>Create Your Own Contest</strong></h2>
           <Link to="/contest/create">
             <button>Create a Contest</button>
           </Link>

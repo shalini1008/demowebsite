@@ -8,30 +8,31 @@ const Quiz = () => {
   const [answers, setAnswers] = useState([]);
   const [showScore, setShowScore] = useState(false);
 
-  const questions = [
+  const questions =[
     {
-      question: 'What is the capital of France?',
+      question: 'Which part of the Indian Constitution deals with Fundamental Rights?',
       type: 'radio',
-      options: ['Paris', 'Berlin', 'London', 'Rome'],
-      answer: 'Paris',
+      options: ['Part III', 'Part IV', 'Part V', 'Part VI'],
+      answer: 'Part III',
     },
     {
-      question: 'Which planets are considered gas giants? (Select all that apply)',
+      question: 'Which of the following are Directive Principles of State Policy? (Select all that apply)',
       type: 'checkbox',
-      options: ['Venus', 'Mars', 'Jupiter', 'Saturn'],
-      answer: ['Jupiter', 'Saturn'],
+      options: ['Right to Equality', 'Promotion of educational and economic interests of weaker sections', 'Prohibition of traffic in human beings', 'Equal justice and free legal aid'],
+      answer: ['Promotion of educational and economic interests of weaker sections', 'Equal justice and free legal aid'],
     },
     {
-      question: 'Who is the CEO of Tesla?',
+      question: 'Who is known as the Chief Architect of the Indian Constitution?',
       type: 'input',
-      answer: 'Elon Musk',
+      answer: 'Dr. B.R. Ambedkar',
     },
     {
-      question: 'Share your feedback about this quiz:',
+      question: 'What are your thoughts on the importance of Fundamental Rights in India?',
       type: 'textarea',
       answer: '',
     },
   ];
+  
 
   const handleAnswerSelection = (questionIndex, selectedAnswer) => {
     const updatedAnswers = [...answers];

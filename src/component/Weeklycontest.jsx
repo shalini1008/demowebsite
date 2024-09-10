@@ -103,7 +103,7 @@ const WeeklyContest = ({ startNowForTesting = false }) => {
       <div>
         {status === "ongoing" && !hasSubmitted ? (
           <Link to="/contestquestion">
-            <button>Go to Contest Questions</button>
+            <button >Go to Contest Questions</button>
           </Link>
         ) : (
           <button disabled>
@@ -114,7 +114,7 @@ const WeeklyContest = ({ startNowForTesting = false }) => {
 
       {/* Submit button (you can put this on the contest questions page) */}
       {status === "ongoing" && !hasSubmitted && (
-        <button onClick={handleContestSubmit}>Submit Contest</button>
+        <button className = "sub" onClick={handleContestSubmit}>Submit Contest</button>
       )}
     </section>
   );

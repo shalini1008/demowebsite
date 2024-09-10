@@ -1,6 +1,6 @@
 .App {
     text-align: center;
-    background-color: #dee5ef; /* Darkish blue background */
+    background-color: rgb(215, 183, 161); /* Darkish blue background */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     color: white;
   }
   .App h1{
-    text-decoration: underline;
+    
     position: absolute;
     top: 200px;
     left:550px
@@ -42,3 +42,19 @@
   .App-footer p {
     margin: 0;
   }
+
+  @keyframes customBounce {
+    0%, 100% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(-25px);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+  
+  .animate-custom-bounce {
+    animation: customBounce 2s infinite;
+  }
+  
